@@ -14,9 +14,9 @@ int main() {
 	cin >> code;
 	
 	if (code == "js") {
-		freopen("main.js", "w", stdout);
+		freopen("output.js", "w", stdout);
 	} else {
-		freopen("main.ts", "w", stdout);
+		freopen("output.ts", "w", stdout);
 	}
 	
 	map<string, bool> varMap;

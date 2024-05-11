@@ -42,7 +42,7 @@ code python
 code dart
 ```
 
-Output (in main.js)
+Output (in output.js)
 
 ```javascript
 let hatmic = 2009;
@@ -69,7 +69,7 @@ code python
 code dart
 ```
 
-Output (in main.ts)
+Output (in output.ts)
 
 ```typescript
 let hatmic = 2009;
