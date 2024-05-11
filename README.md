@@ -21,7 +21,7 @@ js
 hatmic 2009
 ```
 
-Output (in main.js)
+Output (in output.js)
 
 ```javascript
 let hatmic = 2009;
