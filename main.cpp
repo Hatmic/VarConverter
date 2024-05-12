@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
-#include <map>
-#include <stdexcept>
+#include "./converters/jsVarConverter.cpp"
+#include "./converters/tsVarConverter.cpp"
+#include "./converters/pyVarConverter.cpp"
 
 using namespace std;
 
@@ -15,35 +16,16 @@ int main() {
 	
 	if (code == "js") {
 		freopen("output.js", "w", stdout);
-	} else {
+		jsVarConverter();
+	}
+	else if (code == "ts") {
 		freopen("output.ts", "w", stdout);
+		tsVarConverter();
+	}
+	else if (code == "py") {
+		freopen("output.py", "w", stdout);
+		pyVarConverter();
 	}
 	
-	map<string, bool> varMap;
-	string varName, varNum;
-	
-	while (cin >> varName >> varNum) {
-	    if (varMap.find(varName) != varMap.end()) {
-	    	cout << varName;
-		} else {
-			varMap[varName] = true;
-			cout << "let " << varName;
-		}
-		
-		cout << " = ";
-	
-		try {
-			size_t pos;
-	        int num = std::stoi(varNum, &pos);
-	        if (pos == varNum.size()) {
-	            cout << num << ";";
-	        }
-		} catch (const std::invalid_argument& e) {
-    		cout << "\"" << varNum << "\"" << ";";
-		}
-		
-		cout << endl;
-	}
-
-    return 0;
+	return 0;
 }

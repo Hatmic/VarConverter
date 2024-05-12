@@ -1,7 +1,6 @@
-let hatmic = 2009;
-let hat = "mic";
-let code = "cpp";
+let hatmic:number = 2009;
+let hat:string = "mic";
+let code:string = "cpp";
 code = "c";
 code = "javascript";
 code = "python";
-code = "dart";

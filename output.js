@@ -4,4 +4,3 @@ let code = "cpp";
 code = "c";
 code = "javascript";
 code = "python";
-code = "dart";
